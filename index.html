@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicolas Dirnegger - Academic Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Nicolas Dirnegger</h1>
+            <h2>PhD Student at UCLA</h2>
+            <h3>Department of Electrical Engineering</h3>
+
+            <img src="images/profile_picture_400.jpg" alt="Image of Nicolas Dirnegger">
+            <p> 
+                <a href="mailto:nickeyd01@ucla.edu">Email</a>
+                <a href="files/Nicolas_Dirnegger_CV.pdf">CV</a>
+                <a href="https://www.linkedin.com/in/nicolas-dirnegger-aa8442100/">LinkedIn</a>
+                <a href="https://github.com/Nickeyd01">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=d320d9EAAAAJ&hl=en">Scholar</a>
+            </p>
+        </header>
+        <nav class="tabs">
+            <button class="tab-button">Bio</button>
+            <button class="tab-button">Projects</button>
+            <button class="tab-button">Contact</button>
+        </nav>
+        <main>
+            <section id="Bio">
+                <h2>Biography</h2>
+                <p>
+                    I am a PhD student at UCLA in the Department of Electrical Engineering, where I work on quantum computing and quantum sensing with a focus on superconducting and optical devices. My research is supervised by Dr. Prineha Narang. I am interested in quantum networks, quantum transduction, and quantum communication. I have previously worked at IBM and AFRL on superconducting devices for quantum communication and networks.
+                </p>
+                <p>
+                    I completed my BSc in Electrical Engineering at ETH Zürich, where I worked on silicon nitride grating couplers for photonic integrated circuits. I also completed my MSc at UCLA in Physics, where I focused on mesoscopic optics and quantum electronics.
+                </p>
+            </section>
+
+            <section id="Projects">
+                <div>
+                    <h3>
+                        <a href="https://doi.org/10.48550/arXiv.2503.10842" target="_blank" rel="noopener noreferrer">
+                          Monte Carlo model of distilled remote entanglement between superconducting qubits across optical channels
+                        </a>
+                      </h3>
+                    <img class="project-image" src="images/remote_entanglement.png" alt="Remote Entanglement">
+                    <p>2025</p>
+                    <p>
+                        A promising quantum computing architecture comprises modules of superconducting quantum processors linked by optical channels via quantum transducers. 
+                        To map transducer device performance to system-level channel performance, our model uses Monte Carlo simulations that incorporate 2-to-1 and 3-to-1 entanglement distillation protocols. 
+                        We show that the Extreme Photon Loss distillation protocol is particularly high performing and that, even without distillation, present-day transducers are at the threshold of enabling Bell pair distribution with fidelities of 50%. 
+                        If the next generation of transducers can improve by 3 orders of magnitude in both added noise and efficiency, and increase repetition rates by 50x, then they would allow for remote two-qubit gates achieving 99.7% fidelities at 100 kHz rates. 
+                        These results set targets for transducers to be ready for deployment into scaled superconducting quantum computers.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        <a href="https://doi.org/10.48550/arXiv.2408.07118" target="_blank" rel="noopener noreferrer">
+                          Efficient Multiparty Entanglement Distribution with DODAG-X Protocol
+                        </a>
+                      </h3>
+                    <img class="project-image" src="images/dodag_x.png" alt="DODAG-X Protocol">
+                    <p>2024</p>
+                    <p>
+                        In this work we introduce the DODAG-X protocol for multipartite entanglement distribution in quantum networks. 
+                        Leveraging the power of Destination Oriented Directed Acyclic Graphs (DODAGs), our protocol optimizes resource 
+                        consumption and enhances robustness to noise in dynamic and lossy networks. Implementing a variation on the X-protocol 
+                        within the DODAG, we minimize graph verification and path-finding calculations, significantly reducing computational 
+                        overhead when compared to other entanglement routing schemes. Additionally, our benchmarks on grid lattice and small-world 
+                        topologies reveal substantial measurement reduction compared to existing protocols. We demonstrate the success of DODAG-X 
+                        for generating maximal three-party entanglement in arbitrary networks, and describe the potential for scaling to generic 
+                        n-party entanglement. The DODAG-X protocol provides a scalable and efficient solution for entanglement routing, advancing 
+                        current techniques for reliable quantum communication and network applications.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        <a href="https://doi.org/10.1021/acsphotonics.3c00834" target="_blank" rel="noopener noreferrer"> 
+                        Design of an Efficient Silicon Nitride Grating Coupler
+                        </a>
+                    </h3>
+                    <img class="project-image" src="images/grating_coupler.png" alt="Grating Coupler">
+                    <p>2022</p>
+                    <p>
+                        This project was conducted as part of my Bachelor Thesis at ETH Zurich during my last semester at the Institute of 
+                        Electromagnetic Fields under the supervision of Prof. Juerg Leuthold, Manuel Kohli and Boris Vukovic. The project 
+                        consisted of exploring the potential uses of silicon nitride as an alternative platform for photonic integrated circuits 
+                        as it shows tremendous promise due to low propagation losses, CMOS compatibility, and ability to handle high input power, 
+                        among others. The first fundamental challenge was to understand the coupling from optical fibers to the nano- and 
+                        microscale photonic waveguides. The thesis concentrated on the interface between fibers and integrated circuits so called 
+                        couplers, specifically grating couplers, and on how to make them more efficient. In this work, a silicon nitride based 
+                        grating coupler was demonstrated with a coupling efficiency below 0.5 dB using a back reflector. Using amorphous silicon 
+                        as overlay gratings, a 1-dB Bandwidth of 40 nm is achieved. The development of efficient coupling at the interface was 
+                        and remains a vital step to harness the full potential of photonic integrated circuits. That work was then subsequently published
+                        by my Bachelor supervisor Dr. Manuel Kohli and his team in the journal ACS Photonics. 
+                    </p>
+                </div>
+                <!-- <div>
+                    <h3>Science and Engineering Fair Project</h3>
+                    <img class="project-image" src="images/sciencefair.png" alt="Science Fair Project">
+                    <p>2018</p>
+                    <p>
+                        Science and Engineering Fair project during my high school years with Christina Henzinger. We built headphones capable 
+                        of generating electricity from temperature differences of environment and body using Peltier effect. Won Science Fair in 
+                        2018 in Vienna.
+                    </p>
+                </div> -->
+            </section>
+
+            <section id="Contact">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/xpwpyqye" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+            
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="_replyto" required><br><br>
+            
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            
+
+
+
+                    
+        </main>
+    </body>
+</html>
